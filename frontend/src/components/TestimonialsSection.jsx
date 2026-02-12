@@ -56,7 +56,7 @@ export const TestimonialsSection = () => {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white"
           >
             O que dizem sobre
-            <span className="bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent"> n\u00f3s</span>
+            <span className="bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent"> nós</span>
           </motion.h2>
         </div>
 
