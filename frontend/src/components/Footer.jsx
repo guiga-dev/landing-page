@@ -51,7 +51,7 @@ export const Footer = () => {
             </div>
           </motion.div>
 
-          {/* Servi\u00e7os */}
+          {/* Serviços */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isVisible ? { opacity: 1, y: 0 } : {}}
