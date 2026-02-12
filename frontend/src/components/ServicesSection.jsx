@@ -119,7 +119,7 @@ export const ServicesSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white"
           >
-            Solu\u00e7\u00f5es que
+            Soluções que
             <span className="bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent"> impulsionam</span>
           </motion.h2>
           <motion.p
