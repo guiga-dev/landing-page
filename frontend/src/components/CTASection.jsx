@@ -23,15 +23,15 @@ export const CTASection = () => {
   };
 
   return (
-    <section id="contato" className="relative py-32 bg-[#030B1A]">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent" />
+    <section id="contato" className="relative py-32 bg-white dark:bg-[#030B1A]">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-200 dark:via-blue-500/20 to-transparent" />
 
       {/* Background effects */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] opacity-10"
+        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] opacity-3 dark:opacity-10"
           style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.3) 0%, transparent 70%)' }}
         />
-        <div className="absolute bottom-0 left-1/4 w-[300px] h-[300px] opacity-5"
+        <div className="absolute bottom-0 left-1/4 w-[300px] h-[300px] opacity-2 dark:opacity-5"
           style={{ background: 'radial-gradient(circle, rgba(96,165,250,0.4) 0%, transparent 70%)' }}
         />
       </div>
@@ -43,7 +43,7 @@ export const CTASection = () => {
             <motion.span
               initial={{ opacity: 0, y: 20 }}
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
-              className="inline-block text-blue-400 text-sm font-semibold tracking-widest uppercase mb-4"
+              className="inline-block text-blue-600 dark:text-blue-400 text-sm font-semibold tracking-widest uppercase mb-4"
             >
               Fale Conosco
             </motion.span>
@@ -51,18 +51,18 @@ export const CTASection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white leading-tight"
             >
               Pronto para
-              <span className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent"> crescer?</span>
+              <span className="bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent"> crescer?</span>
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 }}
-              className="mt-6 text-white/40 text-lg leading-relaxed"
+              className="mt-6 text-slate-500 dark:text-white/40 text-lg leading-relaxed"
             >
-              Envie uma mensagem e nossa equipe entrará em contato para entender suas necessidades e criar uma estratégia personalizada.
+              Envie uma mensagem e nossa equipe entrar\u00e1 em contato para entender suas necessidades e criar uma estrat\u00e9gia personalizada.
             </motion.p>
 
             <motion.div
@@ -71,17 +71,17 @@ export const CTASection = () => {
               transition={{ delay: 0.3 }}
               className="mt-10 flex flex-col gap-4"
             >
-              <div className="flex items-center gap-4 text-white/50">
-                <div className="w-10 h-10 rounded-lg bg-blue-600/10 border border-blue-500/20 flex items-center justify-center">
-                  <MessageCircle className="w-4 h-4 text-blue-400" />
+              <div className="flex items-center gap-4 text-slate-500 dark:text-white/50">
+                <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-600/10 border border-blue-200 dark:border-blue-500/20 flex items-center justify-center">
+                  <MessageCircle className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                 </div>
-                <span className="text-sm">Resposta em até 24 horas</span>
+                <span className="text-sm">Resposta em at\u00e9 24 horas</span>
               </div>
-              <div className="flex items-center gap-4 text-white/50">
-                <div className="w-10 h-10 rounded-lg bg-blue-600/10 border border-blue-500/20 flex items-center justify-center">
-                  <Send className="w-4 h-4 text-blue-400" />
+              <div className="flex items-center gap-4 text-slate-500 dark:text-white/50">
+                <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-600/10 border border-blue-200 dark:border-blue-500/20 flex items-center justify-center">
+                  <Send className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                 </div>
-                <span className="text-sm">Consultoria gratuita incluída</span>
+                <span className="text-sm">Consultoria gratuita inclu\u00edda</span>
               </div>
             </motion.div>
           </div>
@@ -94,50 +94,50 @@ export const CTASection = () => {
           >
             <form
               onSubmit={handleSubmit}
-              className="relative p-8 rounded-2xl bg-white/[0.03] border border-white/[0.08] backdrop-blur-sm"
+              className="relative p-8 rounded-2xl bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/[0.08] shadow-lg shadow-slate-100 dark:shadow-none backdrop-blur-sm"
             >
               <div className="space-y-5">
                 <div>
-                  <label className="block text-white/60 text-sm font-medium mb-2">Nome</label>
+                  <label className="block text-slate-600 dark:text-white/60 text-sm font-medium mb-2">Nome</label>
                   <Input
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Seu nome completo"
                     required
-                    className="bg-white/[0.04] border-white/[0.08] text-white placeholder:text-white/30 focus:border-blue-500/50 focus:ring-blue-500/20 h-12 rounded-xl"
+                    className="bg-slate-50 dark:bg-white/[0.04] border-slate-200 dark:border-white/[0.08] text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-white/30 focus:border-blue-500/50 focus:ring-blue-500/20 h-12 rounded-xl"
                   />
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label className="block text-white/60 text-sm font-medium mb-2">E-mail</label>
+                    <label className="block text-slate-600 dark:text-white/60 text-sm font-medium mb-2">E-mail</label>
                     <Input
                       type="email"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="seu@email.com"
                       required
-                      className="bg-white/[0.04] border-white/[0.08] text-white placeholder:text-white/30 focus:border-blue-500/50 focus:ring-blue-500/20 h-12 rounded-xl"
+                      className="bg-slate-50 dark:bg-white/[0.04] border-slate-200 dark:border-white/[0.08] text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-white/30 focus:border-blue-500/50 focus:ring-blue-500/20 h-12 rounded-xl"
                     />
                   </div>
                   <div>
-                    <label className="block text-white/60 text-sm font-medium mb-2">Telefone</label>
+                    <label className="block text-slate-600 dark:text-white/60 text-sm font-medium mb-2">Telefone</label>
                     <Input
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       placeholder="(11) 99999-9999"
-                      className="bg-white/[0.04] border-white/[0.08] text-white placeholder:text-white/30 focus:border-blue-500/50 focus:ring-blue-500/20 h-12 rounded-xl"
+                      className="bg-slate-50 dark:bg-white/[0.04] border-slate-200 dark:border-white/[0.08] text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-white/30 focus:border-blue-500/50 focus:ring-blue-500/20 h-12 rounded-xl"
                     />
                   </div>
                 </div>
                 <div>
-                  <label className="block text-white/60 text-sm font-medium mb-2">Mensagem</label>
+                  <label className="block text-slate-600 dark:text-white/60 text-sm font-medium mb-2">Mensagem</label>
                   <Textarea
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Conte-nos sobre seu projeto..."
                     required
                     rows={4}
-                    className="bg-white/[0.04] border-white/[0.08] text-white placeholder:text-white/30 focus:border-blue-500/50 focus:ring-blue-500/20 rounded-xl resize-none"
+                    className="bg-slate-50 dark:bg-white/[0.04] border-slate-200 dark:border-white/[0.08] text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-white/30 focus:border-blue-500/50 focus:ring-blue-500/20 rounded-xl resize-none"
                   />
                 </div>
                 <Button

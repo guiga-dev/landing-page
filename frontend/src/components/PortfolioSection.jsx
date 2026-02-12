@@ -1,15 +1,14 @@
 import { useState, useCallback, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import useEmblaCarousel from 'embla-carousel-react';
 import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react';
-import { Button } from './ui/button';
 import { portfolioItems } from '../data/mock';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 export const PortfolioSection = () => {
   const [titleRef, titleVisible] = useScrollReveal();
   const [activeIndex, setActiveIndex] = useState(0);
-  
+
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: 'start',
@@ -32,7 +31,6 @@ export const PortfolioSection = () => {
     return () => emblaApi.off('select', onSelect);
   }, [emblaApi, onSelect]);
 
-  // Auto-play
   useEffect(() => {
     if (!emblaApi) return;
     const interval = setInterval(() => {
@@ -42,8 +40,8 @@ export const PortfolioSection = () => {
   }, [emblaApi]);
 
   return (
-    <section id="resultados" className="relative py-32 bg-[#030B1A]">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent" />
+    <section id="resultados" className="relative py-32 bg-white dark:bg-[#030B1A]">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-200 dark:via-blue-500/20 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
@@ -52,18 +50,18 @@ export const PortfolioSection = () => {
             <motion.span
               initial={{ opacity: 0, y: 20 }}
               animate={titleVisible ? { opacity: 1, y: 0 } : {}}
-              className="inline-block text-blue-400 text-sm font-semibold tracking-widest uppercase mb-4"
+              className="inline-block text-blue-600 dark:text-blue-400 text-sm font-semibold tracking-widest uppercase mb-4"
             >
-              Portfólio
+              Portf\u00f3lio
             </motion.span>
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               animate={titleVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white"
             >
               Resultados que
-              <span className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent"> falam</span>
+              <span className="bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent"> falam</span>
             </motion.h2>
           </div>
 
@@ -75,13 +73,13 @@ export const PortfolioSection = () => {
           >
             <button
               onClick={scrollPrev}
-              className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:text-white hover:border-blue-500/50 hover:bg-blue-500/10 transition-all duration-300"
+              className="w-12 h-12 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-slate-400 dark:text-white/50 hover:text-blue-600 dark:hover:text-white hover:border-blue-300 dark:hover:border-blue-500/50 hover:bg-blue-50 dark:hover:bg-blue-500/10 transition-colors duration-300"
             >
               <ArrowLeft className="w-5 h-5" />
             </button>
             <button
               onClick={scrollNext}
-              className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:text-white hover:border-blue-500/50 hover:bg-blue-500/10 transition-all duration-300"
+              className="w-12 h-12 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-slate-400 dark:text-white/50 hover:text-blue-600 dark:hover:text-white hover:border-blue-300 dark:hover:border-blue-500/50 hover:bg-blue-50 dark:hover:bg-blue-500/10 transition-colors duration-300"
             >
               <ArrowRight className="w-5 h-5" />
             </button>
@@ -101,7 +99,7 @@ export const PortfolioSection = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="group relative rounded-2xl overflow-hidden bg-white/[0.02] border border-white/[0.06] hover:border-blue-500/20 transition-all duration-500"
+                  className="group relative rounded-2xl overflow-hidden bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/[0.06] hover:border-blue-300 dark:hover:border-blue-500/20 shadow-sm dark:shadow-none transition-colors duration-500"
                 >
                   {/* Image */}
                   <div className="relative h-56 overflow-hidden">
@@ -110,8 +108,8 @@ export const PortfolioSection = () => {
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#030B1A] via-transparent to-transparent" />
-                    
+                    <div className="absolute inset-0 bg-gradient-to-t from-white dark:from-[#030B1A] via-transparent to-transparent" />
+
                     {/* Overlay on hover */}
                     <div className="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                       <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
@@ -122,14 +120,14 @@ export const PortfolioSection = () => {
 
                   {/* Content */}
                   <div className="p-6">
-                    <span className="text-blue-400 text-xs font-semibold tracking-wider uppercase">
+                    <span className="text-blue-600 dark:text-blue-400 text-xs font-semibold tracking-wider uppercase">
                       {item.category}
                     </span>
-                    <h3 className="text-white text-lg font-bold mt-2 mb-3">
+                    <h3 className="text-slate-900 dark:text-white text-lg font-bold mt-2 mb-3">
                       {item.title}
                     </h3>
-                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20">
-                      <span className="text-blue-300 text-sm font-semibold">{item.result}</span>
+                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20">
+                      <span className="text-blue-600 dark:text-blue-300 text-sm font-semibold">{item.result}</span>
                     </div>
                   </div>
                 </motion.div>
@@ -147,7 +145,7 @@ export const PortfolioSection = () => {
               className={`h-2 rounded-full transition-all duration-300 ${
                 activeIndex === index
                   ? 'w-8 bg-blue-500'
-                  : 'w-2 bg-white/20 hover:bg-white/40'
+                  : 'w-2 bg-slate-300 dark:bg-white/20 hover:bg-slate-400 dark:hover:bg-white/40'
               }`}
             />
           ))}
