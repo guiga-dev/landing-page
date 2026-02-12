@@ -13,11 +13,10 @@ export const PortfolioSection = () => {
     loop: true,
     align: 'start',
     slidesToScroll: 1,
-    containScroll: 'trimSnaps',
   });
 
-  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
-  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
+  const scrollPrev = useCallback(() => { if (emblaApi) emblaApi.scrollPrev(); }, [emblaApi]);
+  const scrollNext = useCallback(() => { if (emblaApi) emblaApi.scrollNext(); }, [emblaApi]);
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
