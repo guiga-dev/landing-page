@@ -86,8 +86,8 @@ export const PortfolioSection = () => {
         </div>
 
         {/* Carousel */}
-        <div className="overflow-hidden -ml-6" ref={emblaRef}>
-          <div className="flex">
+        <div className="overflow-hidden" ref={emblaRef}>
+          <div className="flex ml-[-24px]">
             {portfolioItems.map((item, index) => (
               <div
                 key={item.id}
