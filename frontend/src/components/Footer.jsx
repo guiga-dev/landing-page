@@ -126,7 +126,7 @@ export const Footer = () => {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/[0.05] flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/20 text-xs">
-            \u00a9 {new Date().getFullYear()} Movii. Todos os direitos reservados.
+            © {new Date().getFullYear()} Movii. Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-white/20 text-xs hover:text-white/40 transition-colors duration-300">
