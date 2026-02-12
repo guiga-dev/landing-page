@@ -111,7 +111,7 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl sm:text-6xl lg:text-8xl font-bold leading-tight tracking-tight"
+          className="text-5xl sm:text-6xl lg:text-8xl font-bold leading-none tracking-tight"
         >
           <LetterSwapForward
             label="Sua marca em"
@@ -119,8 +119,7 @@ export const HeroSection = () => {
             autoTriggerDelay={1500}
             className="text-slate-900 dark:text-white cursor-pointer"
           />
-          <br />
-          <span className="relative inline-flex flex-col items-center">
+          <span className="relative inline-flex flex-col items-center mt-1 sm:mt-2">
             <LetterSwapForward
               label="movimento"
               reverse={false}
