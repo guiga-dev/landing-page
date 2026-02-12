@@ -11,9 +11,7 @@ export const ScrollLogoSection = () => {
       if (!sectionRef.current) return;
       const rect = sectionRef.current.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-      const sectionHeight = rect.height;
 
-      // Calculate progress: 0 when section enters viewport, 1 when it's fully scrolled through
       const start = rect.top - windowHeight;
       const end = rect.bottom;
       const total = end - start;

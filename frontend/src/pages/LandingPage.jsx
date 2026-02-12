@@ -10,7 +10,7 @@ import { Footer } from '../components/Footer';
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-[#030B1A]">
+    <div className="min-h-screen bg-white dark:bg-[#030B1A] transition-colors duration-300">
       <Header />
       <HeroSection />
       <ServicesSection />

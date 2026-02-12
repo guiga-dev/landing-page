@@ -13,7 +13,7 @@ export const Footer = () => {
   const [ref, isVisible] = useScrollReveal();
 
   return (
-    <footer ref={ref} className="relative bg-[#020812] pt-20 pb-8">
+    <footer ref={ref} className="relative bg-slate-900 dark:bg-[#020812] pt-20 pb-8">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -31,7 +31,7 @@ export const Footer = () => {
               style={{ filter: 'brightness(1.1)' }}
             />
             <p className="text-white/40 text-sm leading-relaxed mb-6">
-              Transformando marcas através do marketing digital. Estratégias que geram resultados reais.
+              Transformando marcas atrav\u00e9s do marketing digital. Estrat\u00e9gias que geram resultados reais.
             </p>
             <div className="flex gap-3">
               {footerLinks.social.map((social) => {
@@ -42,7 +42,7 @@ export const Footer = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-white/40 hover:text-blue-400 hover:border-blue-500/30 hover:bg-blue-500/10 transition-all duration-300"
+                    className="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-white/40 hover:text-blue-400 hover:border-blue-500/30 hover:bg-blue-500/10 transition-colors duration-300"
                   >
                     <Icon className="w-4 h-4" />
                   </a>
@@ -51,13 +51,13 @@ export const Footer = () => {
             </div>
           </motion.div>
 
-          {/* Serviços */}
+          {/* Servi\u00e7os */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isVisible ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-6">Serviços</h4>
+            <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-6">Servi\u00e7os</h4>
             <ul className="space-y-3">
               {footerLinks.servicos.map((link) => (
                 <li key={link.label}>
@@ -126,11 +126,11 @@ export const Footer = () => {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/[0.05] flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/20 text-xs">
-            © {new Date().getFullYear()} Movii. Todos os direitos reservados.
+            \u00a9 {new Date().getFullYear()} Movii. Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-white/20 text-xs hover:text-white/40 transition-colors duration-300">
-              Política de Privacidade
+              Pol\u00edtica de Privacidade
             </a>
             <a href="#" className="text-white/20 text-xs hover:text-white/40 transition-colors duration-300">
               Termos de Uso
