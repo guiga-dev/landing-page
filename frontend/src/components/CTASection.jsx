@@ -75,7 +75,7 @@ export const CTASection = () => {
                 <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-600/10 border border-blue-200 dark:border-blue-500/20 flex items-center justify-center">
                   <MessageCircle className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                 </div>
-                <span className="text-sm">Resposta em at\u00e9 24 horas</span>
+                <span className="text-sm">Resposta em até 24 horas</span>
               </div>
               <div className="flex items-center gap-4 text-slate-500 dark:text-white/50">
                 <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-600/10 border border-blue-200 dark:border-blue-500/20 flex items-center justify-center">
