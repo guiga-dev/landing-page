@@ -62,7 +62,7 @@ export const CTASection = () => {
               transition={{ delay: 0.2 }}
               className="mt-6 text-slate-500 dark:text-white/40 text-lg leading-relaxed"
             >
-              Envie uma mensagem e nossa equipe entrar\u00e1 em contato para entender suas necessidades e criar uma estrat\u00e9gia personalizada.
+              Envie uma mensagem e nossa equipe entrará em contato para entender suas necessidades e criar uma estratégia personalizada.
             </motion.p>
 
             <motion.div
