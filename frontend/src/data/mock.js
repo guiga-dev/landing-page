@@ -154,5 +154,6 @@ export const footerLinks = {
 
 export const logos = {
   white: "https://customer-assets.emergentagent.com/job_f5193f2e-8211-4a60-824b-63b05f3a23ef/artifacts/ujo9pjyq_ChatGPT%20Image%2012%20de%20fev.%20de%202026%2C%2014_40_46.png",
-  blue: "https://customer-assets.emergentagent.com/job_f5193f2e-8211-4a60-824b-63b05f3a23ef/artifacts/obdfmr9d_movii%20azul.png"
+  blue: "https://customer-assets.emergentagent.com/job_f5193f2e-8211-4a60-824b-63b05f3a23ef/artifacts/obdfmr9d_movii%20azul.png",
+  blueLight: "https://customer-assets.emergentagent.com/job_movii-flow/artifacts/6zd06b5u_ChatGPT%20Image%2012%20de%20fev.%20de%202026%2C%2016_17_23.png"
 };
