@@ -52,7 +52,7 @@ export const PortfolioSection = () => {
               animate={titleVisible ? { opacity: 1, y: 0 } : {}}
               className="inline-block text-blue-600 dark:text-blue-400 text-sm font-semibold tracking-widest uppercase mb-4"
             >
-              Portf\u00f3lio
+              Portfólio
             </motion.span>
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
