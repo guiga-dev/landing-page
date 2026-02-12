@@ -111,7 +111,7 @@ export const ServicesSection = () => {
             transition={{ duration: 0.6 }}
             className="inline-block text-blue-600 dark:text-blue-400 text-sm font-semibold tracking-widest uppercase mb-4"
           >
-            Nossos Servi\u00e7os
+            Nossos Serviços
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
