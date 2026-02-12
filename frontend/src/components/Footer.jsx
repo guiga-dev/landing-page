@@ -57,7 +57,7 @@ export const Footer = () => {
             animate={isVisible ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-6">Servi\u00e7os</h4>
+            <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-6">Serviços</h4>
             <ul className="space-y-3">
               {footerLinks.servicos.map((link) => (
                 <li key={link.label}>
