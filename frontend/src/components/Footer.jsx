@@ -130,7 +130,7 @@ export const Footer = () => {
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-white/20 text-xs hover:text-white/40 transition-colors duration-300">
-              Pol\u00edtica de Privacidade
+              Política de Privacidade
             </a>
             <a href="#" className="text-white/20 text-xs hover:text-white/40 transition-colors duration-300">
               Termos de Uso
