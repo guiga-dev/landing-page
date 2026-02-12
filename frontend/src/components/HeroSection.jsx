@@ -144,8 +144,8 @@ export const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-8 text-lg sm:text-xl text-slate-500 dark:text-white/60 max-w-2xl mx-auto leading-relaxed"
         >
-          Estrat\u00e9gias digitais que geram resultados reais. Automa\u00e7\u00f5es, redes sociais,
-          tr\u00e1fego pago e sites que convertem.
+          Estratégias digitais que geram resultados reais. Automações, redes sociais,
+          tráfego pago e sites que convertem.
         </motion.p>
 
         <motion.div
