@@ -47,12 +47,12 @@ export const Header = () => {
             whileTap={{ scale: 0.95 }}
             className="relative z-10">
 
-            <div className={`flex items-center rounded-xl overflow-hidden transition-colors duration-300 ${isDark ? '' : 'bg-[#0A1628] px-3 py-1.5'}`}>
+            <div className="flex items-center">
               <img
-                src={logos.white}
+                src={isDark ? logos.white : logos.blueLight}
                 alt="Movii"
                 className="h-30 w-40 object-contain"
-                style={{ filter: 'brightness(1.1)' }} />
+                style={{ filter: isDark ? 'brightness(1.1)' : 'none' }} />
 
             </div>
           </motion.a>
