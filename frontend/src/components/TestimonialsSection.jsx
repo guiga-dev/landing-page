@@ -63,11 +63,11 @@ export const TestimonialsSection = () => {
         {/* Carousel */}
         <div className="relative">
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex">
+            <div className="flex ml-[-12px]">
               {testimonials.map((testimonial, index) => (
                 <div
                   key={testimonial.id}
-                  className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_33.333%] min-w-0 px-3"
+                  className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_33.333%] min-w-0 pl-3 pr-3"
                 >
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
