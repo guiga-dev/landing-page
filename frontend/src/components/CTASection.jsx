@@ -81,7 +81,7 @@ export const CTASection = () => {
                 <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-600/10 border border-blue-200 dark:border-blue-500/20 flex items-center justify-center">
                   <Send className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                 </div>
-                <span className="text-sm">Consultoria gratuita inclu\u00edda</span>
+                <span className="text-sm">Consultoria gratuita incluída</span>
               </div>
             </motion.div>
           </div>
