@@ -88,11 +88,11 @@ export const PortfolioSection = () => {
 
         {/* Carousel */}
         <div className="overflow-hidden" ref={emblaRef}>
-          <div className="flex gap-6">
+          <div className="flex">
             {portfolioItems.map((item, index) => (
               <div
                 key={item.id}
-                className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_33.333%] min-w-0"
+                className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_33.333%] min-w-0 pl-6"
               >
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
