@@ -31,7 +31,7 @@ export const Footer = () => {
               style={{ filter: 'brightness(1.1)' }}
             />
             <p className="text-white/40 text-sm leading-relaxed mb-6">
-              Transformando marcas atrav\u00e9s do marketing digital. Estrat\u00e9gias que geram resultados reais.
+              Transformando marcas através do marketing digital. Estratégias que geram resultados reais.
             </p>
             <div className="flex gap-3">
               {footerLinks.social.map((social) => {
