@@ -128,7 +128,7 @@ export const ServicesSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-6 text-slate-400 dark:text-white/40 text-lg max-w-xl mx-auto"
           >
-            Cada servi\u00e7o \u00e9 pensado para levar sua marca ao pr\u00f3ximo n\u00edvel
+            Cada serviço é pensado para levar sua marca ao próximo nível
           </motion.p>
         </div>
 
